@@ -1,0 +1,79 @@
+/* styles.css */
+/* Basic body styles - sets up the main container for the entire page */
+body {
+    margin: 0;                    
+    font-family: 'Segoe UI';
+    line-height: 1.5;
+    color: black;
+    background-color: lightblue;
+}
+
+header, main, footer {
+    padding: 2rem;
+    max-width: 1512px;  /* Maximum width provided in the homework instructions */
+    margin: 0 auto;  /* Center the content horizontally with no top and bottom margin */
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem 1rem;  /* 0.5rem top and bottom, 1rem left and right */
+}
+
+.subtitle {
+    color: gray;
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+main {
+    padding: 2rem 4rem;
+    /* Use flexbox to align the sections in a column */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;  /* 2rem gap between sections for consistency */
+}
+
+section {
+    padding: 2rem 4rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-section {
+    align-items: center;
+    /* Use flexbox for the profile section */
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    /* Wrap the profile image and content on smaller screens */
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    /* Make the profile image square and smaller */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-content {
+    flex-grow: 1;
+    min-width: 300px;
+}
+
+.interests-section ul {
+    padding-left: 2rem;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
