@@ -30,15 +30,14 @@ header {
 }
 
 main {
-    padding: 2rem 4rem;
-    /* Use flexbox to align the sections in a column */
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;  /* 2rem gap between sections for consistency */
 }
 
 section {
-    padding: 2rem 4rem;
+    padding: 1rem;
     background: white;
     border-radius: 16px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -49,15 +48,16 @@ section {
     /* Use flexbox for the profile section */
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 2rem;
     /* Wrap the profile image and content on smaller screens */
     flex-wrap: wrap;
+    justify-content: center;  /* Center items when wrapped */
 }
 
 .profile-image {
     /* Make the profile image square and smaller */
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -65,15 +65,43 @@ section {
 
 .about-content {
     flex-grow: 1;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 .interests-section ul {
-    padding-left: 2rem;
+    padding-left: 1.5rem;
 }
 
 footer {
     text-align: center;
     background-color: white;
     box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    main {
+        padding: 2rem 4rem;
+    }
+    
+    section {
+        padding: 2rem 4rem;
+    }
+    
+    .profile-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profile-section {
+        gap: 3rem;
+    }
+    
+    .about-content {
+        min-width: 300px;
+    }
+    
+    .interests-section ul {
+        padding-left: 2rem;
+    }
 }
