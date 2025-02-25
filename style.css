@@ -33,7 +33,7 @@ main {
     padding: 1rem;  /* 1rem gap at the top, bottom and both sides of the main content */
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1rem;  /* Needs to be consistent with the gap in the profile section */
 }
 
 section {
@@ -48,7 +48,7 @@ section {
     /* Use flexbox for the profile section */
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1rem;  /* Needs to be consistent with the gap between sections */
     /* Wrap the profile image and content on smaller screens */
     flex-wrap: wrap;
     justify-content: center;  /* Center items when wrapped */
@@ -95,7 +95,7 @@ footer {
     }
     
     .profile-section {
-        gap: 3rem;
+        gap: 2rem;
     }
     
     .about-content {
