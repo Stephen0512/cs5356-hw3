@@ -36,7 +36,7 @@ main {
     gap: 1rem;  /* Needs to be consistent with the gap in the profile section */
 }
 
-section {
+section, article {
     padding: 1rem;
     background-color: white;
     border-radius: 16px;
@@ -146,6 +146,12 @@ section {
     border-radius: 4px;
     font-weight: 500;
     align-self: center;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+#quote-btn:hover {
+    background-color: #357abd;
 }
 
 footer {
@@ -161,7 +167,7 @@ footer {
         gap: 2rem;
     }
     
-    section {
+    section, article {
         padding: 2rem 4rem;
     }
     
