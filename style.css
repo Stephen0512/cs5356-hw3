@@ -110,10 +110,10 @@ section {
 }
 
 .quote-section {
-    gap: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 0.25rem;
     align-items: center;
 }
 
@@ -127,15 +127,14 @@ section {
     width: 100%;
     order: 3;
     font-style: italic;
-    color: gray;
-    background-color: white;
+    line-height: 1.5;
     padding: 1rem;
     border-radius: 16px;
+    color: gray;
+    background-color: white;
     word-wrap: break-word;
     box-sizing: border-box;
-    line-height: 1.5;
     height: fit-content;
-    overflow-y: auto;  /* Handle situation where quote is too long */
 }
 
 #quote-btn {
