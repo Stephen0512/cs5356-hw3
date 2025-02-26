@@ -68,8 +68,85 @@ section {
     min-width: 280px;
 }
 
+.education-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem auto;
+}
+
+.education-section th,
+.education-section td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    /* Add minimum width to prevent cells from becoming too narrow */
+    min-width: 90px;
+    /* Add word wrapping for long content */
+    word-wrap: break-word;
+}
+
+.education-section th {
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+.education-section tr {
+    transition: background-color 0.25s ease;  /* Smooth transition for hover effect */
+}
+
+.education-section tr:hover {
+    background-color: lightcyan;
+}
+
+.education-section code {
+    background-color: lightgray;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
 .interests-section ul {
     padding-left: 1.5rem;
+}
+
+.quote-section {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote-section h2 {
+    margin: 0;
+    flex: 0 1 auto;
+    min-width: 200px;
+}
+
+#quote {
+    width: 100%;
+    order: 3;
+    font-style: italic;
+    color: gray;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 16px;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    line-height: 1.5;
+    height: fit-content;
+    overflow-y: auto;  /* Handle situation where quote is too long */
+}
+
+#quote-btn {
+    order: 2;
+    padding: 0.75rem 1.5rem;
+    color: white;
+    background-color: #4a90e2;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    align-self: center;
 }
 
 footer {

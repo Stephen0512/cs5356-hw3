@@ -23,6 +23,40 @@
             </div>
         </section>
 
+        <section class="education-section">
+            <h2>Education Background</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Master of Engineering in Information Systems</td>
+                        <td>Cornell Tech</td>
+                        <td>2024-2026</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor of Engineering in Electronics and Computer Science</td>
+                        <td>The University of Edinburgh</td>
+                        <td>2020-2024</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                For this HTML part of the homework, I implemented a table to show my education background. 
+                This <code>table</code> behavior is easy to implement by using <code>tbody</code>, <code>thead</code>, <code>tr</code> and <code>td</code> tags, and HTML will automatically draw the table for us.
+                In addition to that, I also added a hover effect to the table rows, which I found very intuitive and makes the table more interactive.
+            </p>
+            <p>
+                For the CSS part of the homework, I decided to add a smooth transition effect to the hover effect of the table rows I implemented in the previous part.
+                This helps smooth out the transition when the user hovers over and out of the table rows and makes the website more appealing.
+            </p>
+        </section>
+
         <section class="interests-section">
             <h2>My Interests</h2>
             <ul>
@@ -34,10 +68,20 @@
                 <li>Sailing</li>
             </ul>
         </section>
+
+        <section class="quote-section">
+            <h2>Random Quote for Fun</h2>
+            <quoteblock id="quote">
+                Click the button to load a random quote!
+            </quoteblock>
+            <quotebutton id="quote-btn">Get Quote</quotebutton>
+        </section>
     </main>
 
     <footer>
         <p>© 2025 Zhuohang Shen</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
