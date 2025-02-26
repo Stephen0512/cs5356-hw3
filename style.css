@@ -146,12 +146,6 @@ section, article {
     border-radius: 4px;
     font-weight: 500;
     align-self: center;
-    cursor: pointer;
-    transition: background-color 0.25s ease;
-}
-
-#quote-btn:hover {
-    background-color: #357abd;
 }
 
 footer {
